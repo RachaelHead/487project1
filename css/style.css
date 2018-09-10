@@ -1,0 +1,322 @@
+@supports (grid-area:auto) {
+
+/* GRID SPECIFICATION */
+  .site{
+    display: grid;
+    grid-template-columns: 9.5% 30% 51% 9.5%;
+    grid-template-rows: 45px 110px 105px 67px 300px 105px 235px 35px 180px 235px 32px 50px;
+  }
+
+.header{
+  grid-column: 1/5;
+  grid-row: 1/2;
+  background-image: linear-gradient(#2498ff, #1d85d9);
+}
+
+.navbar{
+  grid-column: 1/5;
+  grid-row: 2/3;
+  background: #134670;
+}
+
+.title{
+  grid-column: 2/4;
+  grid-row: 3/4;
+  margin: 15px 0px 15px 0px;
+  background: #33cc66;
+  border-radius: 5px;
+}
+
+.announce{
+  grid-column: 2/4;
+  grid-row: 4/5;
+  margin: 15px 15px 0px 15px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.tasks{
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin: 0px 0px 0px 15px;
+  background: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+}
+
+.data{
+  grid-column: 3/4;
+  grid-row: 5/7;
+  margin: 0px 15px 0px 0px;
+  background: #d8d8d8;
+}
+
+.recs{
+  grid-column: 2/3;
+  grid-row: 6/8;
+  margin: 0px 0px 0px 15px;
+  background:#e7e7e7;
+}
+
+.contacts{
+  grid-column: 3/4;
+  grid-row: 7/9;
+  margin: 0px 15px 0px 0px;
+  background:#39599b;
+}
+
+.news{
+  grid-column: 3/4;
+  grid-row: 9/10;
+  margin: 0px 15px 0px 0px;
+  background: #fe7f13;
+}
+
+.ads{
+ grid-column: 2/4;
+ grid-row: 10/11;
+ margin:0px 15px 15px 15px;
+ background: #2298f4;
+}
+
+.footer{
+  grid-column: 1/5;
+  grid-row: 12/13;
+  background: #999999;
+}
+
+/* GRID SPECIFICATION END */
+
+/* FLEX */
+
+.flex-center{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-space-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.break {
+flex-basis: 100%;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  display: inline-block;
+  }
+
+/* FLEX END*/
+
+/* BODY STYLING */
+
+@font-face {
+  font-family: 'myriadpro';
+  src: url('../fonts/myriad-pro-regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+body{
+  margin: 0px;
+}
+
+p{
+  font-family: 'myriadpro';
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+h1{
+  font-family: 'myriadpro';
+  font-weight: 400;
+}
+
+h2{
+  font-family: 'myriadpro';
+  font-weight: 400;
+  font-size: 32px;
+  color: #2498f4;
+}
+
+h3{
+  font-family: 'myriadpro';
+  font-weight: 400;
+  font-size: 21px;
+  color: #2498f4;
+}
+
+
+
+/* BODY END */
+
+/* HEADER */
+
+.header-text{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.help-icon {
+  border-right: 1px solid #1C85D8;
+  border-left: 1px solid #1C85D8;
+  padding: 6px 12px 6px 12px;
+  margin: 0px 12px 0px 12px;
+}
+
+.settings-white{
+  margin-right: 125px;
+}
+
+
+/* HEADER */
+
+/* NAVBAR */
+
+.dashboard{
+  margin: 0px 32px 15px 0px;
+}
+
+.customers{
+  margin: 0px 30px 20px 0px;
+}
+
+.messages{
+  margin: 0px 37px 15px 0px;
+}
+
+.promotions{
+  margin: 0px 46px 17px 0px;
+}
+
+.pagecreator{
+  margin: 0px 45px 18px 0px;
+}
+
+.analytics{
+  margin: 0px 0px 14px 0px;
+}
+
+.shadow-dashboard {
+  margin: 0px 30px 0px 10px;
+}
+
+.shadow-customers{
+  margin: 0px 30px 0px 0px;
+}
+
+.shadow-messages{
+  margin: 0px 32px 0px 0px;
+}
+
+.shadow-promotions{
+  margin: 0px 32px 0px 0px;
+}
+
+.shadow-pagecreator{
+  margin: 0px 32px 0px 0px;
+}
+
+/* NAVBAR END */
+
+/* TITLE */
+
+.dashboard-text{
+  margin: 0px 27px 0px 27px;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.search-box{
+  width: 258px;
+  height: 34px;
+  background-color: #f4f4f4;
+  border: 1px solid #2db55b;
+  border-radius: 2px;
+  margin-right: 15px;
+}
+
+.search{
+  margin-right: 9px;
+}
+
+
+/* TITLE END */
+
+/* ANNOUNCEMENTS */
+
+.announcements-text{
+  flex-basis: 18%;
+  font-family: 'myriadpro';
+  color: #fe7f13;
+  font-size: 14px;
+  padding: 0px 15px 0px 19px;
+}
+
+.announcements-message{
+  flex-basis: 74%;
+  font-family: 'myriadpro';
+  color: #777777;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+}
+
+.announcements-buttons{
+  flex-basis: 8%;
+}
+
+.announcements-divider{
+  height: 52px;
+  width: 1px;
+  background-color: #eeeeee;
+}
+
+
+/* ANNOUNCEMENTS END*/
+
+/* TASKS */
+.tasks-title{
+  margin: 22px 20px 22px 22px;
+}
+
+.settings-gray{
+  margin: 0px 20px 0px 20px;
+}
+
+.disabled-task-number{
+  height: 24px;
+  width: 24px;
+  background-color: #cccccc;
+  border-radius: 999px;
+  font: 'myriadpro' 18px #ffffff;
+}
+
+.disabled-task-profile{
+  height: 30px;
+  width: 60px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+
+}
+
+.disabled-text{
+  color: #cccccc;
+}
+
+
+
+/* TASKS END */
+
+}
