@@ -49,14 +49,19 @@
   grid-column: 3/4;
   grid-row: 5/7;
   margin: 0px 15px 0px 0px;
-  background: #d8d8d8;
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .recs{
   grid-column: 2/3;
   grid-row: 6/8;
   margin: 0px 0px 0px 15px;
-  background:#e7e7e7;
+  background:#ffffff;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .contacts{
@@ -97,6 +102,12 @@
   align-items: center;
 }
 
+.flex-left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .flex-right{
   display: flex;
   justify-content: flex-end;
@@ -110,7 +121,7 @@
 }
 
 .break {
-flex-basis: 100%;
+  flex-basis: 100%;
   width: 0px;
   height: 0px;
   overflow: hidden;
@@ -156,6 +167,22 @@ h3{
   font-weight: 400;
   font-size: 21px;
   color: #2498f4;
+  margin: 17px 0px 17px 0px;
+}
+
+h4{
+  font-family: 'myriadpro';
+  font-weight: 400;
+  font-size: 13px;
+  color: #999999;
+}
+
+h5{
+  font-family: 'myriadpro';
+  font-weight: 400;
+  font-size: 10px;
+  color: #777777;
+  margin:0px;
 }
 
 
@@ -288,11 +315,15 @@ h3{
 
 /* TASKS */
 .tasks-title{
-  margin: 22px 20px 22px 22px;
+  margin: 22px 20px 0px 22px;
 }
 
 .settings-gray{
   margin: 0px 20px 0px 20px;
+}
+
+.task{
+  border-bottom: 1px solid #eeeeee;
 }
 
 .disabled-task-number{
@@ -301,22 +332,81 @@ h3{
   background-color: #cccccc;
   border-radius: 999px;
   font: 'myriadpro' 18px #ffffff;
+  margin: 0px 12px 0px 12px;
 }
 
-.disabled-task-profile{
+.task-number{
+  height: 24px;
+  width: 24px;
+  background-color: #32cc66;
+  border-radius: 999px;
+  font: 'myriadpro' 18px #ffffff;
+  margin: 0px 12px 0px 12px;
+}
+
+.task-profile{
   height: 30px;
   width: 60px;
   border: 1px solid #cccccc;
   border-radius: 2px;
+  margin: 0px 10px 0px 10px;
+}
 
+
+.task-profile-num{
+  color: #2498f3;
+  font-size: 16px;
+  margin: 0px 10px 0px 0px;
 }
 
 .disabled-text{
   color: #cccccc;
 }
 
+.profile{
+  margin: 0px 8px 0px 6px;
+}
+
+.profile-disabled{
+  margin: 0px 8px 0px 6px;
+}
 
 
 /* TASKS END */
+
+/* ANALYTICS */
+.graph-title{
+  margin: 0px 0px 0px 50px;
+}
+
+.analytics-graph{
+  flex-basis: 70%;
+  margin: 0px 0px 0px 24px;
+}
+
+.graph{
+  border-right: 1px solid #eeeeee;
+}
+
+
+
+/* ANALYTICS */
+
+/* RECOMMENDATIONS */
+
+.article{
+  margin: 0px 17px 0px 14px;
+}
+
+.rec-type{
+}
+
+.rec-title{
+  font-size: 16px;
+  color: #777777;
+  margin: 0px;
+}
+
+/* RECOMMENDATIONS END */
 
 }
