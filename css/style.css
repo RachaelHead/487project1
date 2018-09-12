@@ -53,6 +53,9 @@
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  display: grid;
+  grid-template-columns: 78% 22% ;
+  grid-template-rows:73px 243px 89px;
 }
 
 .recs{
@@ -175,6 +178,7 @@ h4{
   font-weight: 400;
   font-size: 13px;
   color: #999999;
+  margin: 12px;
 }
 
 h5{
@@ -348,7 +352,7 @@ h5{
   height: 30px;
   width: 60px;
   border: 1px solid #cccccc;
-  border-radius: 2px;
+  border-radius: 3px;
   margin: 0px 10px 0px 10px;
 }
 
@@ -375,8 +379,39 @@ h5{
 /* TASKS END */
 
 /* ANALYTICS */
+
+
+.analytics-title{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 22px 20px 0px 22px;
+}
+
+.graph{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
 .graph-title{
   margin: 0px 0px 0px 50px;
+}
+
+select{
+  font-family: 'myriadpro';
+  color: #666666;
+  font-size: 13px;
+  border-color: #dddddd;
+  border-radius: 3px;
+  padding: 7px 32px 6px 11px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../images/carrot-down.png) 93% / 7% no-repeat;
+}
+
+.dropdown-menu{
+  margin: 0px 42px 0px 0px;
 }
 
 .analytics-graph{
@@ -386,6 +421,25 @@ h5{
 
 .graph{
   border-right: 1px solid #eeeeee;
+}
+
+.pie-charts{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.flex-pie{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.social-checks{
+  grid-column: 1/3;
+  grid-row: 3/4;
+  background-color: #ffffff;
 }
 
 
