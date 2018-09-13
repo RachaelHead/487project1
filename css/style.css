@@ -298,9 +298,27 @@ h5{
   width: 258px;
   height: 34px;
   background-color: #f4f4f4;
-  border: 1px solid #2db55b;
   border-radius: 2px;
   margin-right: 15px;
+}
+
+.search-box:focus{
+  background-color: #ffffff;
+}
+
+form{
+  font-family: 'myriadpro';
+}
+
+form input[type=text] {
+  width: 258px;
+  height: 34px;
+  background-color: #f4f4f4;
+  border: 1px solid #2db55b;
+  border-radius: 2px;
+  font-family: 'myriadpro';
+  font-size: 14px;
+  background: url(../images/search.png) 96% / 10% no-repeat;
 }
 
 .search{
@@ -555,6 +573,18 @@ form input[type=checkbox]:checked + label{
   margin: 0px;
 }
 
+.dyk-back:hover{
+  margin-left: -5px;
+  transition-duration: .5s;
+  cursor:pointer;
+}
+
+.dyk-next:hover{
+  margin-right: -5px;
+  cursor:pointer;
+  transition-duration: .5s;
+}
+
 /* NEWS END */
 
 /* ADS */
@@ -564,6 +594,14 @@ form input[type=checkbox]:checked + label{
   height:73%;
   background-color: #ffffff;
   border-radius: 3px;
+}
+
+.advertisement1:hover{
+  position: relative;
+  width: 31%;
+  height:74%;
+  transition-duration: .5s;
+  cursor: pointer;
 }
 
 .ad1{
@@ -603,6 +641,18 @@ form input[type=checkbox]:checked + label{
 
 .ad2-1{
   padding: 7px 0px 7px 0px;
+  transition-duration: .5s;
+  position:absolute;
+  top:56%;
+  left: 4%;
+  background-color: #33cc66;
+  width: 92%;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.ad2-1:hover{
+  padding: 9px 0px 9px 0px;
   position:absolute;
   top:50%;
   left: 4%;
