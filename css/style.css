@@ -77,7 +77,8 @@
   grid-column: 3/4;
   grid-row: 7/9;
   margin: 0px 15px 0px 0px;
-  background:#39599b;
+  background:#ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .news{
@@ -85,7 +86,8 @@
   grid-row: 9/10;
   margin: 0px 15px 0px 0px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .ads{
@@ -112,6 +114,14 @@
   align-items: center;
 }
 
+.flex-center-nowrap{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .flex-left{
   display: flex;
   justify-content: flex-start;
@@ -127,6 +137,13 @@
 .flex-space-between{
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-space-between-column{
+  display: flex;
+  flex-flow: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -347,7 +364,20 @@ form input[type=text] {
 }
 
 .announcements-buttons{
-  flex-basis: 8%;
+  flex-basis: 78px;
+}
+
+.annoucnce-btn{
+  height:16px;
+  width: 16px;
+  background-color: #ffffff;
+  border: 2px solid #ededed;
+  border-radius: 999px;
+  margin:0px 3px 0px 3px;
+}
+
+.rotate{
+  transform: rotate(180deg);
 }
 
 .announcements-divider{
@@ -553,6 +583,51 @@ form input[type=checkbox]:checked + label{
 }
 
 /* RECOMMENDATIONS END */
+
+/* CUSTOMERS AND CONTACTS */
+
+.contacts-card{
+  width:212px;
+  height: 197px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  margin: 0px 35px 0px 35px;
+}
+
+.avatar-green, .avatar-orange{
+  margin-top: -24px;
+}
+
+.ribbon-content{
+  height: 50px;
+  width:212px;
+  text-align: center;
+  background-color: #218fe6;
+}
+
+.ribbon-content h3{
+  color: #ffffff;
+  margin:5px 0px 0px 0px;
+}
+
+.ribbon-content p{
+  font-size: 11px;
+}
+
+.ribbonend-left{
+  margin-left: -14px;
+}
+
+.ribbonend-right{
+  margin-right: -14px;
+}
+
+.contacts-graph, .customers-chart{
+  margin:10px;
+}
+
+/* CUSTOMERS AND CONTACTS END */
 
 /* NEWS */
 
