@@ -64,7 +64,6 @@
   margin: 0px 0px 0px 15px;
   background:#ffffff;
   border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .blank{
@@ -174,6 +173,7 @@ h2{
   font-weight: 400;
   font-size: 32px;
   color: #2498f4;
+  margin: 0px;
 }
 
 h3{
@@ -486,9 +486,30 @@ form input[type=checkbox]:checked + label{
 /* ANALYTICS */
 
 /* RECOMMENDATIONS */
+.recommendations-title{
+  padding: 22px 20px 22px 22px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.recommendation{
+  border-bottom: 1px dotted #eeeeee;
+}
 
 .article{
-  margin: 0px 17px 0px 14px;
+  margin: 5px 17px 0px 14px;
+}
+
+.lightbulb{
+  margin: 5px 23px 0px 14px;
+}
+
+.check{
+  margin: 5px 15px 0px 14px;
+}
+
+
+.recommendation-text{
+  padding: 5px 5px 12px 0px;
 }
 
 .rec-type{
