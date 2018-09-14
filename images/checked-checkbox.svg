@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>checked-checkbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="180%" y1="-3547.36842%" x2="180%" y2="4347.36842%" id="linearGradient-1">
+            <stop stop-color="#FF9900" offset="47%"></stop>
+            <stop stop-color="#FF6600" offset="53%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="checked-checkbox" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="checked">
+            <path d="M0,6 C0,4.34314575 1.34314575,3 3,3 L15,3 C16.6568542,3 18,4.34314575 18,6 L18,18 C18,19.6568542 16.6568542,21 15,21 L3,21 C1.34314575,21 0,19.6568542 0,18 L0,6 Z" id="Path" fill="#DDDDDD"></path>
+            <path d="M1,6 C1,4.8954305 1.8954305,4 3,4 L15,4 C16.1045695,4 17,4.8954305 17,6 L17,18 C17,19.1045695 16.1045695,20 15,20 L3,20 C1.8954305,20 1,19.1045695 1,18 L1,6 Z" id="Path-2" fill="#FFFFFF"></path>
+            <path d="M3.509,8.661 C2.97541588,9.15723054 2.47154225,9.68447802 2,10.24 L8.486,19 C8.486,19 15.561,6.49 22,0.247 C21.764,0.147 22.047,-1.13686838e-13 20.066,-1.13686838e-13 C9.783,8.414 8.014,12.56 8.014,12.56 C8.014,12.56 3.706,8.549 3.509,8.661 Z" id="Path-3" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

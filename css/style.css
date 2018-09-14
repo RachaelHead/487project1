@@ -183,11 +183,10 @@
 body{
   margin: 0px;
   font-family: 'myriadpro';
+  font-weight: 400;
 }
 
 p{
-  font-family: 'myriadpro';
-  font-weight: 300;
   color: #ffffff;
   font-size: 14px;
   margin: 0px;
@@ -199,7 +198,6 @@ h1{
 }
 
 h2{
-  font-family: 'myriadpro';
   font-weight: 400;
   font-size: 32px;
   color: #2498f4;
@@ -207,7 +205,6 @@ h2{
 }
 
 h3{
-  font-family: 'myriadpro';
   font-weight: 400;
   font-size: 21px;
   color: #2498f4;
@@ -215,7 +212,6 @@ h3{
 }
 
 h4{
-  font-family: 'myriadpro';
   font-weight: 400;
   font-size: 13px;
   color: #999999;
@@ -223,19 +219,15 @@ h4{
 }
 
 h5{
-  font-family: 'myriadpro';
   font-weight: 400;
   font-size: 10px;
   color: #777777;
   margin:0px;
 }
 
-
-
 /* BODY END */
 
 /* HEADER */
-
 .header-text{
   color: #ffffff;
   font-weight: bold;
@@ -252,11 +244,9 @@ h5{
   margin-right: 125px;
 }
 
-
 /* HEADER */
 
 /* NAVBAR */
-
 .dashboard{
   margin: 0px 32px 15px 0px;
 }
@@ -304,7 +294,6 @@ h5{
 /* NAVBAR END */
 
 /* TITLE */
-
 .dashboard-text{
   margin: 0px 27px 0px 27px;
   color: #ffffff;
@@ -342,11 +331,9 @@ form input[type=text] {
   margin-right: 9px;
 }
 
-
 /* TITLE END */
 
 /* ANNOUNCEMENTS */
-
 .announcements-text{
   flex-basis: 18%;
   font-family: 'myriadpro';
@@ -385,7 +372,6 @@ form input[type=text] {
   width: 1px;
   background-color: #eeeeee;
 }
-
 
 /* ANNOUNCEMENTS END*/
 
@@ -428,7 +414,6 @@ form input[type=text] {
   margin: 0px 10px 0px 10px;
 }
 
-
 .task-profile-num{
   color: #2498f3;
   font-size: 16px;
@@ -447,11 +432,9 @@ form input[type=text] {
   margin: 0px 8px 0px 6px;
 }
 
-
 /* TASKS END */
 
 /* ANALYTICS */
-
 
 .analytics-title{
   grid-column: 1/3;
@@ -511,39 +494,92 @@ select{
   align-items: center;
 }
 
-
 .social-checks{
   grid-column: 1/3;
   grid-row: 4/5;
   background-color: #ffffff;
 }
 
+.social-checks form{
+  height: 5px;
+}
+
 form input[type=checkbox]{
-  width:20px;
-  margin: 0px;
+  width:22px;
+  height:21px;
+  margin: 0px 0px 0px -22px;
   padding: 0px;
   opacity:0;
 }
 
 form input[type=checkbox] + label{
   display:inline-block;
-  margin: 0px 0px 0px -20px;
-  padding: 0px 10px 0px 27px;
-  background: url(../images/unchecked-checkbox.png) no-repeat;
-  background-size: 23px 23px;
+  height:24px;
+  margin: 0px 0px 0px -22px;
+  padding: 0px 0px 0px 22px;
+  background: url(../images/unchecked-checkbox.svg) no-repeat;
 }
 
 form input[type=checkbox]:checked + label{
   display:inline-block;
-  margin: 0px 0px 0px -20px;
-  padding: 0px 10px 0px 27px;
-  background: url(../images/checked-checkbox.png) no-repeat;
-  background-size: 23px 23px;
-
+  height:24px;
+  margin: 0px 0px 0px -22px;
+  padding: 0px 0px 0px 27px;
+  background: url(../images/checked-checkbox.svg) no-repeat;
 }
 
+.social-checks form label{
+  color: #ffffff;
+  font-size: 12px;
+}
 
+.facebook-check p{
+  font-size: 12px;
+  text-align: center;
+  width: 70px;
+  background-color: #114570;
+  border-radius: 3px;
+}
 
+.facebook-check{
+  margin: 0px 32px 0px 0px;
+}
+
+.twitter-check p{
+  font-size: 12px;
+  text-align: center;
+  width: 54px;
+  background-color: #2298f4;
+  border-radius: 3px;
+}
+
+.twitter-check{
+  margin: 0px 32px 0px 0px;
+}
+
+.foursquare-check p{
+  font-size: 12px;
+  text-align: center;
+  width: 79px;
+  background-color: #3a599b;
+  border-radius: 3px;
+}
+
+.foursquare-check{
+  margin: 0px 32px 0px 0px;
+}
+
+.google-check p{
+  font-size: 12px;
+  text-align: center;
+  width: 62px;
+  background-color: #31cc66;
+  border-radius: 3px;
+}
+
+.google-check{
+  margin: 0px 32px 0px 0px;
+}
 /* ANALYTICS */
 
 /* RECOMMENDATIONS */
@@ -593,6 +629,10 @@ form input[type=checkbox]:checked + label{
   border-radius: 5px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
   margin: 0px 35px 0px 35px;
+}
+
+.contacts-card:hover{
+  cursor: pointer;
 }
 
 .avatar-green, .avatar-orange{
@@ -668,14 +708,12 @@ form input[type=checkbox]:checked + label{
   width: 30%;
   height:73%;
   background-color: #ffffff;
+  border: 2px solid #2298f4;
   border-radius: 3px;
 }
 
 .advertisement1:hover{
-  position: relative;
-  width: 31%;
-  height:74%;
-  transition-duration: .5s;
+  border: 2px solid #33cc66;
   cursor: pointer;
 }
 
@@ -727,14 +765,8 @@ form input[type=checkbox]:checked + label{
 }
 
 .ad2-1:hover{
-  padding: 9px 0px 9px 0px;
   position:absolute;
-  top:50%;
-  left: 4%;
-  background-color: #33cc66;
-  width: 92%;
-  border-radius: 3px;
-  text-align: center;
+  top:53%;
 }
 
 .ad3{
