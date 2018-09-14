@@ -27,43 +27,28 @@
   border-radius: 5px;
 }
 
-.border{
-  grid-column: 2/4;
-  grid-row:4/11;
-  z-index: 1;
-}
 
 .announce{
   grid-column: 2/4;
   grid-row: 4/5;
-  margin: 15px 15px 0px 15px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  z-index: 2;
+  padding: 15px 15px 0px 15px;
+  margin-bottom: -5px;
+  background: #eeeeee;
+  border-radius: 5px;
 }
 
 .tasks{
   grid-column: 2/3;
   grid-row: 5/6;
-  margin: 0px 0px 0px 15px;
-  background: #ffffff;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  z-index: 2;
+  padding: 0px 0px 0px 15px;
+  background-image: linear-gradient(#eeeeee, #ffffff);
 }
 
 .data{
   grid-column: 3/4;
   grid-row: 5/7;
-  margin: 0px 15px 0px 0px;
-  background: #ffffff;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  display: grid;
-  grid-template-columns: 78% 22% ;
-  grid-template-rows:73px 31px 212px 89px;
-  z-index: 2;
+  padding: 0px 15px 0px 0px;
+  background-image: linear-gradient(#eeeeee, #ffffff);
 }
 
 .recs{
@@ -408,16 +393,16 @@ form input[type=text] {
 /* TITLE END */
 
 /* BORDER */
-.border{
-  background-image: linear-gradient(#eeeeee, #ffffff);
-  border: 1px solid;
-  border-image: linear-gradient(#dddddd, #ffffff);
-  border-radius: 5px;
-}
+
 
 /* BORDER END */
 
 /* ANNOUNCEMENTS */
+.announcements{
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
 .announcements-text{
   flex-basis: 18%;
   font-family: 'myriadpro';
@@ -460,6 +445,13 @@ form input[type=text] {
 /* ANNOUNCEMENTS END*/
 
 /* TASKS */
+.task-content{
+  background: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+}
+
 .tasks-title{
   margin: 22px 20px 0px 22px;
 }
@@ -519,6 +511,13 @@ form input[type=text] {
 /* TASKS END */
 
 /* ANALYTICS */
+.analytics-content{
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  display: grid;
+  grid-template-columns: 78% 22% ;
+  grid-template-rows:73px 31px 212px 89px;
+}
 
 .analytics-title{
   grid-column: 1/3;
