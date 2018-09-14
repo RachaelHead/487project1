@@ -100,7 +100,8 @@
 .footer{
   grid-column: 1/5;
   grid-row: 12/13;
-  background: #999999;
+  background-image: linear-gradient(#ffffff, #eeeeee);
+  box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* GRID SPECIFICATION END */
@@ -290,6 +291,28 @@ h5{
 .shadow-pagecreator{
   margin: 0px 32px 0px 0px;
 }
+
+.navbar-shading{
+  position: absolute;
+}
+
+.stripe-pattern{
+  position: absolute;
+  top: 45px;
+}
+
+.navbar-fadeleft{
+  position: absolute;
+  top: 45px;
+  left:0px;
+}
+
+.navbar-faderight{
+  position: absolute;
+  top: 45px;
+  right:0px;
+}
+
 
 /* NAVBAR END */
 
@@ -789,5 +812,67 @@ form input[type=checkbox]:checked + label{
 }
 
 /* ADS END */
+
+/* FOOTER */
+.footer-links{
+  margin-right: 15px;
+}
+
+.footer-links p{
+  color: #999999;
+  margin: 0px 12px 0px 12px;
+}
+.footer-links-divider{
+  height: 20px;
+  width: 1px;
+  background-color: #dddddd;
+}
+
+.footer-divider{
+  height: 50px;
+  width: 1px;
+  background-color: #dddddd;
+}
+
+.footer-update{
+  margin: 0px 15px 0px 20px;
+}
+
+.footer-update p{
+  color: #777777;
+  padding: 0px 2px 0px 2px;
+}
+
+.blue-carrot-up{
+  margin-left: 85px;
+}
+
+.statusbar-avatar{
+  margin: 0px 12px 0px 12px;
+}
+
+.footer-avatar p{
+  font-weight: bold;
+  color: #2498f2;
+  margin-right: 15px;
+}
+
+.footer-icons{
+  margin: 0px 15px 0px 15px;
+}
+
+.facebook{
+  margin-right: 5px;
+}
+
+.twitter{
+  margin-right: 5px;
+}
+
+.foursquare{
+  margin-right: 5px;
+}
+
+/* FOOTER END */
 
 }
