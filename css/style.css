@@ -957,7 +957,7 @@ form input[type=checkbox]:checked + label{
   .site{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 45px 110px 80px 105px 405px 340px 500px 540px 220px 235px 32px 300px;
+    grid-template-rows: 45px 110px 80px 105px 226px 500px 340px 540px 220px 235px 32px 300px;
   }
 
   .header{
@@ -1001,8 +1001,9 @@ form input[type=checkbox]:checked + label{
   .data{
   grid-column:  1/2;
   grid-row: 6/7;
-  padding: 0px 15px 0px 0px;
-  background-image: linear-gradient(#eeeeee, #ffffff);
+  padding: 0px;
+  background: #ffffff;
+  border: none;
   }
 
   .recs{
@@ -1099,13 +1100,10 @@ form input[type=checkbox]:checked + label{
     border-left: none;
   }
 
-  .tasks-title {
-    margin: 22px 20px 0px 22px;
-}
 
 h2 {
     font-weight: 400;
-    font-size: 32px;
+    font-size: 21px;
     color: #2498f4;
     margin: 0px;
 }
@@ -1125,8 +1123,54 @@ h3 {
     margin: 3px 20px 5px 20px;
 }
 
-/* HEADER CHANGES */
+/* ANALYTICS CHANGES */
+.analytics-content{
+  background: #ffffff;
+  border: none;
+  display: grid;
+  grid-template-columns: 100% ;
+  grid-template-rows:38px 31px 150px 89px 45px;
+}
 
+
+.analytics-title{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 7px 20px 5px 15px;
+}
+
+h4{
+  margin-left:20px;
+}
+
+.dropdown-menu {
+    margin: 0px 20px 0px 0px;
+}
+.graph-img{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 90%;
+  height: auto;
+  margin: 10px 15px 0px 15px;
+}
+
+.graph-title{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 0px 0px 0px 0px;
+}
+
+.pie-charts{
+  grid-column: 1/2;
+  grid-row: 4/5;
+  border-left: none;
+}
+
+.social-checks{
+  grid-column: 1/2;
+  grid-row: 5/6;
+  background-color: #ffffff;
+}
 
 }
 
@@ -1234,6 +1278,14 @@ h3 {
   box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+}
+
+@media only screen and (min-width: 800px) {
+  .site{
+    display: grid;
+    grid-template-columns: 1fr 34% 56% 1fr;
+    grid-template-rows: 45px 110px 105px 67px 300px 105px 235px 35px 180px 235px 32px 50px;
+  }
 }
 
 @media only screen and (min-width: 601px) {
