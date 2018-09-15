@@ -412,7 +412,8 @@ form input[type=text] {
 
 /* ANNOUNCEMENTS */
 .announcements{
-
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .announcements-text{
@@ -567,8 +568,8 @@ select{
   margin: 0px 42px 0px 0px;
 }
 
-.graph-img{
-  width:90%;
+.graph-analytics{
+  width: 90%;
   height: auto;
   margin: 0px 0px 0px 24px;
 }
@@ -585,7 +586,7 @@ select{
 
 .flex-pie{
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
@@ -674,7 +675,7 @@ form input[type=checkbox]:checked + label{
 }
 
 .google-check{
-  margin: 0px 32px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 /* ANALYTICS */
 
@@ -957,7 +958,7 @@ form input[type=checkbox]:checked + label{
   .site{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 45px 110px 80px 105px 226px 500px 340px 540px 220px 235px 32px 300px;
+    grid-template-rows: 45px 110px 80px 88px 226px 500px 340px 540px 220px 235px 32px 300px;
   }
 
   .header{
@@ -1088,10 +1089,25 @@ form input[type=checkbox]:checked + label{
 
   /* ANNOUNCEMENTS CHANGES */
 
+  .flex-space-evenly{
+    display:flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .announcements{
+    border:none;
+  }
+
   .announcements-divider{
     height: 0px;
     width: 0px;
     background-color: #eeeeee;
+  }
+
+  .announcements-buttons {
+    flex-basis: 20px;
   }
 
   /* TASKS CHANGES */
@@ -1129,7 +1145,7 @@ h3 {
   border: none;
   display: grid;
   grid-template-columns: 100% ;
-  grid-template-rows:38px 31px 150px 89px 45px;
+  grid-template-rows:38px 31px 175px 100px 65px;
 }
 
 
@@ -1149,9 +1165,12 @@ h4{
 .graph-img{
   grid-column: 1/2;
   grid-row: 3/4;
-  width: 90%;
-  height: auto;
-  margin: 10px 15px 0px 15px;
+}
+
+.graph-analytics{
+  width: auto;
+  height: 90%;
+  margin: 10px 15px 10px 15px;
 }
 
 .graph-title{
@@ -1164,12 +1183,14 @@ h4{
   grid-column: 1/2;
   grid-row: 4/5;
   border-left: none;
+  margin: 10px 0px 10px 0px;
 }
 
 .social-checks{
   grid-column: 1/2;
   grid-row: 5/6;
   background-color: #ffffff;
+  margin: 10px 0px 10px 0px;
 }
 
 }
@@ -1287,7 +1308,7 @@ h4{
     grid-template-rows: 45px 110px 105px 67px 300px 105px 235px 35px 180px 235px 32px 50px;
   }
 }
-
+/*
 @media only screen and (min-width: 601px) {
 
 .site{
@@ -1399,3 +1420,5 @@ h3 {
 }
 
 }
+
+*/
