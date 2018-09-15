@@ -384,7 +384,7 @@ h5{
 .search-box{
   background-color: #f4f4f4;
   border-radius: 2px;
-  margin: 15px 15px 15px 0px;
+  margin: 15px 15px 15px 350px;
   height:inherit;
   width: inherit;
 }
@@ -1197,6 +1197,10 @@ h2{
     margin-right: 50px;
 }
 
+.search-box{
+  margin: 15px 15px 15px 0px;
+}
+
 .blue-carrot-up {
     margin-left: 15px;
 }
@@ -1208,7 +1212,7 @@ h2{
   .site{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 45px 110px 110px 115px 288px 478px 256px 540px 220px 500px 200px;
+    grid-template-rows: 45px 180px 110px 115px 288px 478px 256px 540px 220px 500px 200px;
   }
 
   .header{
@@ -1330,17 +1334,32 @@ h2{
     margin-right:15px;
 }
 
+/*
 .shadow-dashboard, .shadow-customers, .shadow-messages, .shadow-promotions, .shadow-pagecreator{
   margin-right: 8px;
 }
+*/
 
-/* .icon-shadow{
-  z-index: -1;
+ .icon-shadow{
+  z-index: -2;
 }
 
 .shadow-dashboard, .shadow-customers, .shadow-messages, .shadow-promotions, .shadow-pagecreator, .shadow-analytics{
-  margin-top: -30px;
-} */
+  margin-top: -500px;
+}
+
+.navbar-fadeleft{
+  z-index: -1;
+}
+
+.navbar-faderight{
+  z-index: -1;
+}
+
+.navbar img{
+  z-index: -1;
+}
+
 
 /* TITLE CHANGES */
   h1{
@@ -1349,6 +1368,10 @@ h2{
     margin: 12px 27px 0px 27px;
     color: #ffffff;
     font-size: 24px;
+  }
+
+  .search-box{
+    margin: 15px 15px 15px 0px;
   }
 
   /* ANNOUNCEMENTS CHANGES */
