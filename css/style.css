@@ -210,7 +210,7 @@ h2{
   font-weight: 400;
   font-size: 32px;
   color: #2498f4;
-  margin: 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 h3{
@@ -384,7 +384,9 @@ h5{
 .search-box{
   background-color: #f4f4f4;
   border-radius: 2px;
-  margin-right: 15px;
+  margin: 15px 15px 15px 0px;
+  height:inherit;
+  width: inherit;
 }
 
 .search-box:focus{
@@ -442,7 +444,6 @@ form input[type=text] {
 
 .announcements-buttons{
   flex-basis: 78px;
-  margin: 5px 0px 5px 0px;
 }
 
 .annoucnce-btn{
@@ -602,6 +603,7 @@ select{
   grid-column: 1/3;
   grid-row: 4/5;
   background-color: #ffffff;
+  margin: 0px 50px 0px 50px;
 }
 
 .social-checks form{
@@ -923,17 +925,23 @@ form input[type=checkbox]:checked + label{
   padding: 0px 2px 0px 2px;
 }
 
+a {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0px;
+  font-weight: bold;
+  color:#2498f2;
+}
+
 .blue-carrot-up{
-  margin-left: 85px;
+  margin-left: 55px;
 }
 
 .statusbar-avatar{
   margin: 0px 12px 0px 12px;
 }
 
-.footer-avatar p{
-  font-weight: bold;
-  color: #2498f2;
+.footer-avatar a{
   margin-right: 15px;
 }
 
@@ -958,11 +966,6 @@ form input[type=checkbox]:checked + label{
 
 }
 
-/* MOBILE SPECS 600PX AND DOWN */
-
-
-
-/* MOBILE SPECS END */
 
 @media only screen and (min-width: 1200px) {
   .site{
@@ -1085,10 +1088,8 @@ form input[type=checkbox]:checked + label{
 .site{
   display: grid;
   grid-template-columns: 1fr 38% 62% 1fr;
-  grid-template-rows: 45px 110px 105px 67px 300px 105px 235px 35px 180px 235px 32px 50px;
+  grid-template-rows: 45px 110px 105px 67px 300px 105px 235px 35px 180px 235px 32px 100px;
 }
-
-
 
 .header{
 grid-column: 1/5;
@@ -1109,7 +1110,6 @@ margin: 15px 0px 15px 0px;
 background: #33cc66;
 border-radius: 5px;
 }
-
 
 .announce{
 grid-column: 2/4;
@@ -1186,10 +1186,19 @@ box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 h3 {
-    font-weight: 400;
     font-size: 18px;
-    color: #2498f4;
-    margin: 17px 0px 17px 0px;
+}
+
+h2{
+  font-size: 26px;
+}
+
+.settings-white {
+    margin-right: 50px;
+}
+
+.blue-carrot-up {
+    margin-left: 15px;
 }
 
 }
@@ -1199,7 +1208,7 @@ h3 {
   .site{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 45px 110px 80px 88px 226px 500px 340px 540px 220px 235px 32px 300px;
+    grid-template-rows: 45px 110px 110px 115px 288px 478px 256px 540px 220px 500px 200px;
   }
 
   .header{
@@ -1251,7 +1260,7 @@ h3 {
   .recs{
   grid-column:  1/2;
   grid-row: 7/8;
-  margin: 0px 0px 0px 15px;
+  margin: 0px;
   background:#ffffff;
   border-left: 1px solid #eeeeee;
   z-index: 2;
@@ -1261,19 +1270,21 @@ h3 {
   .contacts{
   grid-column:  1/2;
   grid-row: 8/9;
-  margin: 0px 15px 0px 0px;
+  margin: 0px;
   background:#ffffff;
-  border: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: none;
+  border-right:none;
   z-index: 2;
   }
 
   .news{
   grid-column:  1/2;
   grid-row: 9/10;
-  margin: 0px 15px 0px 0px;
+  margin: 0px;
   background: #ffffff;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
+  border:none;
   z-index: 2;
   }
 
@@ -1287,10 +1298,18 @@ h3 {
 
   .footer{
   grid-column: 1/2;
-  grid-row: 12/13;
+  grid-row: 11/12;
   background-image: linear-gradient(#ffffff, #eeeeee);
   box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.2);
   }
+
+  .blank {
+    grid-column: 0/0;
+    grid-row: 0/10;
+    margin: 0px;
+    border:none;
+    z-index: -1;
+}
 
 /* HEADER CHANGES */
 .header p {
@@ -1299,6 +1318,10 @@ h3 {
 
   .help-icon {
     padding: 0px 12px 0px 12px;
+}
+
+.settings-white {
+    margin-right: 25px;
 }
 
 /* MENU CHANGES */
@@ -1323,7 +1346,7 @@ h3 {
   h1{
     font-family: 'myriadpro';
     font-weight: 400;
-    margin: 0px 27px 0px 27px;
+    margin: 12px 27px 0px 27px;
     color: #ffffff;
     font-size: 24px;
   }
@@ -1348,7 +1371,15 @@ h3 {
   }
 
   .announcements-buttons {
-    flex-basis: 20px;
+    flex-basis: 50px;
+  }
+
+.annoucnce-btn{
+    margin: 0pc 15px 0px 15px;
+  }
+
+  .announcements-text{
+    padding-top:12px;
   }
 
   /* TASKS CHANGES */
@@ -1360,24 +1391,23 @@ h3 {
 
 h2 {
     font-weight: 400;
-    font-size: 21px;
+    font-size: 24px;
     color: #2498f4;
     margin: 0px;
 }
 
 .tasks-title {
-    margin: 7px 20px 5px 15px;
+    margin: 20px 20px 10px 20px;
 }
 
 h3 {
     font-weight: 400;
     font-size: 18px;
     color: #2498f4;
-    margin: 12px 0px 12px 0px;
 }
 
 .settings-gray {
-    margin: 3px 20px 5px 20px;
+    margin: 5px 20px 5px 20px;
 }
 
 /* ANALYTICS CHANGES */
@@ -1386,14 +1416,14 @@ h3 {
   border: none;
   display: grid;
   grid-template-columns: 100% ;
-  grid-template-rows:38px 31px 175px 100px 65px;
+  grid-template-rows:59px 31px 188px 120px 80px;
 }
 
 
 .analytics-title{
   grid-column: 1/2;
   grid-row: 1/2;
-  margin: 7px 20px 5px 15px;
+  margin: 20px 20px 10px 20px;
 }
 
 h4{
@@ -1403,6 +1433,7 @@ h4{
 .dropdown-menu {
     margin: 0px 20px 0px 0px;
 }
+
 .graph-img{
   grid-column: 1/2;
   grid-row: 3/4;
@@ -1411,7 +1442,7 @@ h4{
 .graph-analytics{
   width: auto;
   height: 90%;
-  margin: 10px 15px 10px 15px;
+  margin: 15px 15px 15px 15px;
 }
 
 .graph-title{
@@ -1424,14 +1455,55 @@ h4{
   grid-column: 1/2;
   grid-row: 4/5;
   border-left: none;
-  margin: 10px 0px 10px 0px;
+  margin: 25px 0px 15px 0px;
 }
 
 .social-checks{
   grid-column: 1/2;
   grid-row: 5/6;
   background-color: #ffffff;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 50px 10px 50px;
+}
+
+.facebook-check {
+    margin: 0px 32px 0px 0px;
+}
+
+.twitter-check {
+    margin: 0px 32px 0px 0px;
+}
+
+.foursquare-check {
+    margin: 0px 32px 0px 0px;
+}
+
+/* RECS CHANGES */
+
+.recommendations-title{
+  padding: 20px 20px 10px 20px;
+}
+
+/* ADS CHANGES */
+
+.advertisement1 {
+    position: relative;
+    width: 50%;
+    height: 30%;
+    background-color: #ffffff;
+    border: 2px solid #2298f4;
+    border-radius: 3px;
+}
+
+/* FOOTER CHANGES */
+
+.blue-carrot-up {
+    margin-left: 15px;
+}
+
+.footer-divider {
+    height: 0px;
+    width: 0px;
+    background-color: #dddddd;
 }
 
 }
