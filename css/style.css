@@ -344,16 +344,23 @@ h5{
   z-index: 4;
 }
 
-.navbar-shading{
+.shading{
+  width:100%;
+  height:110px;
+  overflow: hidden;
   position: absolute;
   z-index: 1;
 }
 
-.stripe-pattern{
+.stripes{
+  width:100%;
+  height: 75px;
+  overflow: hidden;
   position: absolute;
   top: 45px;
   z-index: 2;
 }
+
 
 .navbar-fadeleft{
   position: absolute;
