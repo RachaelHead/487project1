@@ -234,6 +234,10 @@ h5{
   margin:0px;
 }
 
+.help-icon, .settings-white, .annoucnce-btn, .analytics, .channels-pie, .referrals-pie, .settings-gray, .task, .task-profile, .contacts-card, .recommendation, .advertisement1:hover{
+  cursor:pointer;
+}
+
 /* BODY END */
 
 /* HEADER */
@@ -316,9 +320,6 @@ h5{
   z-index: 4;
 }
 
-.analytics:hover{
-  cursor:pointer;
-}
 
 .shadow-dashboard {
   margin: 0px 30px 0px 10px;
@@ -361,7 +362,6 @@ h5{
   z-index: 2;
 }
 
-
 .navbar-fadeleft{
   position: absolute;
   top: 45px;
@@ -376,11 +376,9 @@ h5{
   z-index: 3;
 }
 
-
 /* NAVBAR END */
 
 /* TITLE */
-
 .search-box{
   background-color: #f4f4f4;
   border-radius: 2px;
@@ -414,10 +412,6 @@ form input[type=text] {
 
 /* TITLE END */
 
-/* BORDER */
-
-
-/* BORDER END */
 
 /* ANNOUNCEMENTS */
 .announcements{
@@ -606,6 +600,8 @@ select{
   margin: 0px 50px 0px 50px;
 }
 
+/* checkboxes */
+
 .social-checks form{
   height: 5px;
 }
@@ -686,7 +682,8 @@ form input[type=checkbox]:checked + label{
 .google-check{
   margin: 0px 0px 0px 0px;
 }
-/* ANALYTICS */
+
+/* ANALYTICS END */
 
 /* RECOMMENDATIONS */
 .recommendations-title{
@@ -701,6 +698,7 @@ form input[type=checkbox]:checked + label{
 .article{
   margin: 5px 17px 0px 14px;
 }
+
 
 .lightbulb{
   margin: 5px 23px 0px 14px;
@@ -734,10 +732,6 @@ form input[type=checkbox]:checked + label{
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
-}
-
-.contacts-card:hover{
-  cursor: pointer;
 }
 
 .avatar-green, .avatar-orange{
@@ -815,11 +809,6 @@ form input[type=checkbox]:checked + label{
   background-color: #ffffff;
   border: 2px solid #2298f4;
   border-radius: 3px;
-}
-
-.advertisement1:hover{
-  border: 2px solid #33cc66;
-  cursor: pointer;
 }
 
 .ad1{
@@ -904,6 +893,12 @@ form input[type=checkbox]:checked + label{
   color: #999999;
   margin: 0px 12px 0px 12px;
 }
+
+.footer-links p:hover{
+  text-decoration: underline;
+  cursor:pointer;
+}
+
 .footer-links-divider{
   height: 20px;
   width: 1px;
@@ -1212,7 +1207,7 @@ h2{
   .site{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 45px 180px 110px 115px 288px 478px 256px 540px 220px 500px 200px;
+    grid-template-rows: 45px 180px 110px 115px 288px 478px 256px 540px 220px 500px 180px;
   }
 
   .header{
