@@ -1,11 +1,11 @@
 @supports (grid-area:auto) {
 
 /* GRID SPECIFICATION */
-  .site{
-    display: grid;
-    grid-template-columns: 1fr 34% 56% 1fr;
-    grid-template-rows: 45px 110px 105px 67px 300px 105px 235px 35px 180px 235px 32px 50px;
-  }
+.site{
+  display: grid;
+  grid-template-columns: 1fr 34% 56% 1fr;
+  grid-template-rows: 45px 110px 105px 67px 300px 105px 235px 35px 180px 235px 32px 50px;
+}
 
 .header{
   grid-column: 1/5;
@@ -26,7 +26,6 @@
   background: #33cc66;
   border-radius: 5px;
 }
-
 
 .announce{
   grid-column: 2/4;
@@ -186,6 +185,20 @@
   font-weight: 400;
 }
 
+@font-face{
+  font-family: 'proxima nova bold';
+  src: url('../fonts/proxima-nova-bold.ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: 'proxima nova';
+  src: url('../fonts/proxima-nova-regular.ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+
 body{
   margin: 0px;
   font-family: 'myriadpro';
@@ -242,6 +255,7 @@ h5{
 
 /* HEADER */
 .header p{
+  font-family: 'proxima nova bold', Georgia, sans-serif;
   color: #ffffff;
   font-weight: bold;
 }
@@ -890,6 +904,7 @@ form input[type=checkbox]:checked + label{
 }
 
 .footer-links p{
+  font-family: 'proxima nova', Georgia, sans-serif;
   color: #999999;
   margin: 0px 12px 0px 12px;
 }
@@ -916,17 +931,28 @@ form input[type=checkbox]:checked + label{
 }
 
 .footer-update p{
+  font-family: 'proxima nova', Georgia, sans-serif;
   color: #777777;
   padding: 0px 2px 0px 2px;
 }
 
-a {
-  color: #ffffff;
+a{
+  font-family: 'proxima nova bold', Georgia, sans-serif;
   font-size: 14px;
   margin: 0px;
   font-weight: bold;
   color:#2498f2;
+  text-decoration: none;
 }
+
+a:visited{
+  color:#A400BD;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
 
 .blue-carrot-up{
   margin-left: 55px;
